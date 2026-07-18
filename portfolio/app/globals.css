@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Light mode overrides — the design defaults to dark, light mode softens it
+   rather than inverting to a bright theme, to keep the glass aesthetic intact. */
+.light body {
+  background-color: #eef2f6;
+  color: #101828;
+}
+
+::selection {
+  background: rgba(45, 212, 191, 0.3);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #050816;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #2dd4bf, #22d3ee);
+  border-radius: 999px;
+  border: 2px solid #050816;
+}
+
+@layer components {
+  .glass-panel {
+    @apply relative rounded-2xl border border-glass-border bg-glass-fill backdrop-blur-xl shadow-glass;
+  }
+
+  .glass-panel::before {
+    content: "";
+    @apply pointer-events-none absolute inset-0 rounded-2xl opacity-60;
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.08),
+      rgba(255, 255, 255, 0) 40%
+    );
+  }
+
+  .section-eyebrow {
+    @apply inline-flex items-center gap-2 rounded-full border border-glass-border bg-white/5 px-4 py-1.5 text-xs font-mono uppercase tracking-[0.2em] text-signal-teal;
+  }
+
+  .section-heading {
+    @apply font-display text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight text-white;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-signal-teal via-signal-cyan to-signal-teal bg-clip-text text-transparent;
+  }
+}
+
+/* Hide native cursor only where the custom cursor is active (fine pointer devices) */
+@media (hover: hover) and (pointer: fine) {
+  .cursor-enabled {
+    cursor: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
