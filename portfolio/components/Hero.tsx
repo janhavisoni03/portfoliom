@@ -90,7 +90,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="mx-auto mt-5 max-w-xl text-balance text-sm leading-relaxed text-slate-300 sm:text-base md:mx-0"
           >
-            {PERSONAL.summary}
+          
           </motion.p>
 
           <motion.div
