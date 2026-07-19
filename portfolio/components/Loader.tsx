@@ -30,7 +30,7 @@ export default function Loader() {
             transition={{ delay: 0.2 }}
             className="font-mono text-xs uppercase tracking-[0.3em] text-slate-500"
           >
-            Verifying critical control points
+            Manvendra Chaturvedi 
           </motion.p>
         </motion.div>
       )}
