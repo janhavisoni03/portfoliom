@@ -66,7 +66,9 @@ export default function Hero() {
             className="mt-5 font-display text-4xl font-semibold leading-[1.08] tracking-tight text-white sm:text-5xl md:text-6xl"
           >
             Hi, I&apos;m <span className="gradient-text">Manvendra</span>
-            <br />Ensuring food safety through quality excellence.
+            <br />
+            <motion.h2>  Ensuring food safety through quality excellence.</motion.h2>
+          
           </motion.h1>
 
           <motion.div
