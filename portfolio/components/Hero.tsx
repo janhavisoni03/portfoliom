@@ -68,7 +68,10 @@ export default function Hero() {
             Hi, I&apos;m <span className="gradient-text">Manvendra</span>
             <br />
              </motion.h1>
-            <motion.h2>  Ensuring food safety through quality excellence.</motion.h2>
+            <motion.h2
+              
+              className="mt-5 font-display text-2xl font-semibold leading-[1.08] tracking-tight text-white sm:text-5xl md:text-6xl"
+              >  Ensuring food safety through quality excellence.</motion.h2>
           
          
 
