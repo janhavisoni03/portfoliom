@@ -9,7 +9,7 @@ export default function ExperienceTimeline() {
   return (
     <section id="experience" className="relative mx-auto max-w-4xl px-4 py-28">
       <SectionReveal className="text-center">
-        <span className="section-eyebrow">Critical Control Point 05 &middot; Experience</span>
+        <span className="section-eyebrow">Experience</span>
         <h2 className="section-heading mt-4">
           Where the <span className="gradient-text">monitoring happened</span>
         </h2>
