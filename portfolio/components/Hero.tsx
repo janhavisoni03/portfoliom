@@ -67,9 +67,10 @@ export default function Hero() {
           >
             Hi, I&apos;m <span className="gradient-text">Manvendra</span>
             <br />
+             </motion.h1>
             <motion.h2>  Ensuring food safety through quality excellence.</motion.h2>
           
-          </motion.h1>
+         
 
           <motion.div
             initial={{ opacity: 0, y: 14 }}
