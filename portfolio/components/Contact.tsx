@@ -74,8 +74,9 @@ export default function Contact() {
           </div>
 
           <div className="flex gap-3 pt-2">
-            {
+            {[
               { icon: Linkedin, href: SOCIALS.linkedin, label: "LinkedIn" },
+        { icon: Mail, href: SOCIALS.email, label: "Email" },
             ].map(({ icon: Icon, href, label }) => (
               <MagneticButton
                 key={label}
