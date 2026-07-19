@@ -30,10 +30,10 @@ export default function Contact() {
       <SectionReveal className="text-center">
         <span className="section-eyebrow">Critical Control Point 07 &middot; Contact</span>
         <h2 className="section-heading mt-4">
-          Let&apos;s talk <span className="gradient-text">quality</span>
+          Let&apos;s talk about <span className="gradient-text">quality</span>
         </h2>
         <p className="mx-auto mt-4 max-w-md text-sm text-slate-400">
-          Open to food safety, QA/QC and laboratory roles. Reach out any time.
+          Open to food safety and Quality Management roles. Reach out any time.
         </p>
       </SectionReveal>
 
