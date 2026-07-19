@@ -87,7 +87,6 @@ export default function Navbar() {
           </ul>
 
           <div className="flex items-center gap-2">
-            <ThemeToggle />
             <MagneticButton
               href="#contact"
               className="hidden rounded-full bg-signal-teal px-4 py-2 text-sm font-semibold text-base-950 hover:bg-signal-cyan sm:inline-flex"
