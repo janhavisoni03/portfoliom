@@ -80,7 +80,6 @@ export const SKILL_CATEGORIES = [
       "Chemical Analysis",
       "Equipment Calibration",
       "Sample Preparation",
-      "Reverse-Phase HPLC",
     ],
   },
   {
