@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ArrowDown, Download, Mail, Github, Linkedin, Twitter } from "lucide-react";
 import MagneticButton from "./MagneticButton";
 import { PERSONAL, SOCIALS } from "@/lib/constants";
+import {maanu} from "@/public";
 
 function RoleCycler() {
   const [index, setIndex] = useState(0);
