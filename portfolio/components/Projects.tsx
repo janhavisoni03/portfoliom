@@ -12,7 +12,7 @@ export default function Projects() {
         </h2>
         <p className="mx-auto mt-4 max-w-xl text-sm text-slate-400">
           Hazard analysis and laboratory investigations carried out
-          during internships.
+          during Projects.
         </p>
       </SectionReveal>
 
