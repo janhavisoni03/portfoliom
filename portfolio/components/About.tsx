@@ -7,7 +7,7 @@ export default function About() {
   return (
     <section id="about" className="relative mx-auto max-w-6xl px-4 py-28">
       <SectionReveal className="text-center">
-        <span className="section-eyebrow">Critical Control Point 02 &middot; About</span>
+        <span className="section-eyebrow"> About</span>
         <h2 className="section-heading mt-4">
           The professional behind the <span className="gradient-text">quality checks</span>
         </h2>
