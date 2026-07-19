@@ -28,7 +28,7 @@ export default function Contact() {
   return (
     <section id="contact" className="relative mx-auto max-w-5xl px-4 py-28">
       <SectionReveal className="text-center">
-        <span className="section-eyebrow">Critical Control Point 07 &middot; Contact</span>
+        <span className="section-eyebrow"> Contact</span>
         <h2 className="section-heading mt-4">
           Let&apos;s talk about <span className="gradient-text">quality</span>
         </h2>
