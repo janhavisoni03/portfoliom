@@ -12,7 +12,7 @@ export const PERSONAL = {
   phone: "+91-8929629969",
   email: "manvendrachaturvedi99@gmail.com",
   location: "New Delhi, India",
-  linkedin: "https://linkedin.com/",
+  linkedin: "https://www.linkedin.com/in/manvendra-chaturvedi-7588182b7/",
   summary:
     "Food Safety and Quality Management professional with a Bachelor's degree in Medical Biotechnology and currently pursuing an M.Sc. in Food Safety and Quality Management. Hands-on experience in production operations and quality control through internships at Mother Dairy and Fair Lab Pvt. Ltd. — skilled in HACCP implementation, CCP monitoring, FSMS documentation, laboratory testing, microbiological sampling, quality assurance, GMP, GHP, SOP compliance, and food safety audits.",
 };
@@ -177,8 +177,6 @@ export const CERTIFICATIONS = [
 ];
 
 export const SOCIALS = {
-  github: "https://github.com/",
-  linkedin: "https://linkedin.com/",
-  x: "https://x.com/",
+  linkedin: "https://www.linkedin.com/in/manvendra-chaturvedi-7588182b7/",
   email: `mailto:${PERSONAL.email}`,
 };
