@@ -8,7 +8,7 @@ export default function Skills() {
   return (
     <section id="skills" className="relative mx-auto max-w-6xl px-4 py-28">
       <SectionReveal className="text-center">
-        <span className="section-eyebrow">Critical Control Point 03 &middot; Skills</span>
+        <span className="section-eyebrow">Skills</span>
         <h2 className="section-heading mt-4">
           Every check, <span className="gradient-text">covered</span>
         </h2>
