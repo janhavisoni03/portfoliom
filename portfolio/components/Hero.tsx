@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ArrowDown, Download, Mail, Github, Linkedin, Twitter } from "lucide-react";
 import MagneticButton from "./MagneticButton";
 import { PERSONAL, SOCIALS } from "@/lib/constants";
-import {maanu} from "@/public";
+import maanu from "@/public/maanu.png";
 
 function RoleCycler() {
   const [index, setIndex] = useState(0);
@@ -144,11 +144,15 @@ export default function Hero() {
               transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
             />
             <div className="absolute inset-[6px] rounded-full bg-base-950" />
-            <div className="glass-panel absolute inset-3 flex items-center justify-center overflow-hidden rounded-full">
-              <span className="font-display text-6xl font-semibold text-white sm:text-7xl">
-                MC
-              </span>
-            </div>
+           <div className="glass-panel absolute inset-3 overflow-hidden rounded-full">
+  <Image
+    src={maanu}
+    alt="Manvendra Chaturvedi"
+    fill
+    className="object-cover"
+    priority
+  />
+</div>
             <motion.div
               className="absolute -right-2 top-6 flex items-center gap-2 rounded-full border border-glass-border bg-glass-fill px-3 py-1.5 text-xs font-mono text-signal-teal backdrop-blur-xl"
               animate={{ y: [0, -10, 0] }}
