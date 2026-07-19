@@ -104,7 +104,7 @@ export const EXPERIENCE = [
     points: [
       "Monitored raw milk reception parameters and production processes.",
       "Assisted in HACCP implementation, CCP identification, monitoring and verification.",
-      "Conducted line inspections to ensure GMP, GHP and SOP compliance.",
+      "To ensure GMP, GHP and SOP compliance.",
       "Supported FSMS documentation and production quality records.",
       "Assisted in raw material quality verification and process monitoring.",
       "Participated in food safety compliance, audits and corrective action activities.",
