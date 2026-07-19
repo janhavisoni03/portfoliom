@@ -35,9 +35,8 @@ function RoleCycler() {
 }
 
 const SOCIAL_ICONS = [
-  { icon: Github, href: SOCIALS.github, label: "GitHub" },
+ 
   { icon: Linkedin, href: SOCIALS.linkedin, label: "LinkedIn" },
-  { icon: Twitter, href: SOCIALS.x, label: "X" },
   { icon: Mail, href: SOCIALS.email, label: "Email" },
 ];
 
