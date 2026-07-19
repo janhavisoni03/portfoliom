@@ -9,7 +9,7 @@ export default function Certifications() {
   return (
     <section id="certifications" className="relative mx-auto max-w-5xl px-4 py-28">
       <SectionReveal className="text-center">
-        <span className="section-eyebrow">Critical Control Point 06 &middot; Certifications</span>
+        <span className="section-eyebrow">Certifications</span>
         <h2 className="section-heading mt-4">
           Verified <span className="gradient-text">credentials</span>
         </h2>
