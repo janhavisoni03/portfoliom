@@ -21,9 +21,8 @@ export default function Footer() {
 
         <div className="flex items-center gap-3">
           {[
-            { icon: Github, href: SOCIALS.github, label: "GitHub" },
+        
             { icon: Linkedin, href: SOCIALS.linkedin, label: "LinkedIn" },
-            { icon: Twitter, href: SOCIALS.x, label: "X" },
             { icon: Mail, href: SOCIALS.email, label: "Email" },
           ].map(({ icon: Icon, href, label }) => (
             <MagneticButton
