@@ -6,6 +6,7 @@ import { ArrowDown, Download, Mail, Github, Linkedin, Twitter } from "lucide-rea
 import MagneticButton from "./MagneticButton";
 import { PERSONAL, SOCIALS } from "@/lib/constants";
 import maanu from "@/public/maanu.png";
+import Image from "next/image";
 
 function RoleCycler() {
   const [index, setIndex] = useState(0);
