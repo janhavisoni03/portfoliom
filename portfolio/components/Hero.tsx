@@ -70,7 +70,7 @@ export default function Hero() {
              </motion.h1>
             <motion.h2
               
-              className="mt-5 font-display text-2xl font-semibold leading-[1.08] tracking-tight text-white sm:text-5xl md:text-6xl"
+              className="mt-5 font-display text-2xl font-semibold leading-[1.08] tracking-tight text-white sm:text-2xl md:text-2xl"
               >  Ensuring food safety through quality excellence.</motion.h2>
           
          
