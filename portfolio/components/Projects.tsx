@@ -11,8 +11,8 @@ export default function Projects() {
           Applied <span className="gradient-text">field work</span>
         </h2>
         <p className="mx-auto mt-4 max-w-xl text-sm text-slate-400">
-          Hazard analysis, process mapping and laboratory investigations carried out
-          during hands-on internships.
+          Hazard analysis and laboratory investigations carried out
+          during internships.
         </p>
       </SectionReveal>
 
