@@ -116,7 +116,6 @@ export const EXPERIENCE = [
     period: "Jan 2025 – May 2025",
     points: [
       "Performed sample preparation and laboratory testing.",
-      "Assisted in microbiological and chemical analysis of food samples.",
       "Maintained laboratory records and quality documentation.",
       "Supported quality assurance procedures and testing protocols.",
       "Assisted in calibration and verification of laboratory equipment.",
