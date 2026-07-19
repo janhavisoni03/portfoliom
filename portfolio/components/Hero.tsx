@@ -56,7 +56,7 @@ export default function Hero() {
             transition={{ duration: 0.5 }}
             className="section-eyebrow"
           >
-            Critical Control Point 01 &middot; Introduction
+            Introduction
           </motion.span>
 
           <motion.h1
