@@ -6,7 +6,7 @@ import { Mail, MapPin, Phone, Send, CheckCircle2, Github, Linkedin, Twitter } fr
 import SectionReveal from "./SectionReveal";
 import MagneticButton from "./MagneticButton";
 import { PERSONAL, SOCIALS } from "@/lib/constants";
-import { sendContactEmail } from "@/app/actions";
+import { sendContactEmail } from "@/app/action";
 
 type Status = "idle" | "sending" | "sent";
 
