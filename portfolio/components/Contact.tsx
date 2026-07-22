@@ -6,6 +6,7 @@ import { Mail, MapPin, Phone, Send, CheckCircle2, Github, Linkedin, Twitter } fr
 import SectionReveal from "./SectionReveal";
 import MagneticButton from "./MagneticButton";
 import { PERSONAL, SOCIALS } from "@/lib/constants";
+import { sendContactEmail } from "@/app/actions";
 
 type Status = "idle" | "sending" | "sent";
 
@@ -16,14 +17,28 @@ export default function Contact() {
   // NOTE: this demo submits nowhere on its own. Wire it up to a real
   // endpoint (an API route calling Resend/SendGrid, or a service like
   // Formspree) before deploying to production.
-  const handleSubmit = (e: FormEvent) => {
-    e.preventDefault();
-    setStatus("sending");
-    window.setTimeout(() => {
-      setStatus("sent");
-      window.setTimeout(() => setStatus("idle"), 2500);
-    }, 1200);
-  };
+const handleSubmit = async (e: FormEvent) => {
+  e.preventDefault();
+
+  setStatus("sending");
+
+  const result = await sendContactEmail(form);
+
+  if (result.success) {
+    setStatus("sent");
+
+    setForm({
+      name: "",
+      email: "",
+      message: "",
+    });
+
+    setTimeout(() => setStatus("idle"), 2500);
+  } else {
+    alert("Failed to send email.");
+    setStatus("idle");
+  }
+};
 
   return (
     <section id="contact" className="relative mx-auto max-w-5xl px-4 py-28">
