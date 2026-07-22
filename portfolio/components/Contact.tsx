@@ -26,7 +26,7 @@ const handleSubmit = async (e: FormEvent) => {
   try {
     await emailjs.send(
       "service_mqzfecb", // Your Service ID
-      "service_mqzfecb", // Your Template ID
+      "template_x133m0m", // Your Template ID
       {
         from_name: form.name,
         from_email: form.email,
