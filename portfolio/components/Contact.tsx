@@ -7,6 +7,7 @@ import SectionReveal from "./SectionReveal";
 import MagneticButton from "./MagneticButton";
 import { PERSONAL, SOCIALS } from "@/lib/constants";
 import { sendContactEmail } from "@/app/action";
+import emailjs from "@emailjs/browser";
 
 type Status = "idle" | "sending" | "sent";
 
@@ -22,9 +23,18 @@ const handleSubmit = async (e: FormEvent) => {
 
   setStatus("sending");
 
-  const result = await sendContactEmail(form);
+  try {
+    await emailjs.send(
+      "service_mqzfecb", // Your Service ID
+      "service_mqzfecb", // Your Template ID
+      {
+        from_name: form.name,
+        from_email: form.email,
+        message: form.message,
+      },
+      "Nac1ZdunKS-myJwl2" // Your Public Key
+    );
 
-  if (result.success) {
     setStatus("sent");
 
     setForm({
@@ -34,12 +44,13 @@ const handleSubmit = async (e: FormEvent) => {
     });
 
     setTimeout(() => setStatus("idle"), 2500);
-  } else {
-    alert("Failed to send email.");
+
+  } catch (error) {
+    console.error(error);
+    alert("Failed to send message.");
     setStatus("idle");
   }
 };
-
   return (
     <section id="contact" className="relative mx-auto max-w-5xl px-4 py-28">
       <SectionReveal className="text-center">
