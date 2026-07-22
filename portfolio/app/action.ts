@@ -13,9 +13,9 @@ export async function sendContactEmail(formData: {
    console.log("Received form:", formData);
   console.log("API key exists:", !!process.env.RESEND_API_KEY);
   try {
-    await resend.emails.send({
+    const result = await resend.emails.send({
       from: "Portfolio <onboarding@resend.dev>",
-      to: "manvendrachaturvedi99@gmail.com ", // Replace with your email
+      to: "manvendrachaturvedi99@gmail.com", // Replace with your email
       subject: `Portfolio Contact from ${formData.name}`,
       replyTo: formData.email,
       html: `
@@ -31,7 +31,8 @@ export async function sendContactEmail(formData: {
 
     return { success: true };
   } catch (error) {
-    console.error(error);
-    return { success: false };
+  console.error("RESEND ERROR:", error);
+  throw error;
+
   }
 }
