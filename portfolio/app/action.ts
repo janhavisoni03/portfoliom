@@ -1,5 +1,12 @@
 "use server";
 
+
+export async function sendContactEmail(formData: any) {
+  console.log("Received form:", formData);
+  console.log("API key exists:", !!process.env.RESEND_API_KEY);
+
+  // rest of your code...
+}
 import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
